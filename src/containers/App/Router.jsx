@@ -9,7 +9,8 @@ const Router = () => (
     <Layout />
     <div className="container__wrap">
       <Routes>
-        <Route path=":vehicle" element={<Dashboard />} />
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/:vehicle" element={<Dashboard />} />
       </Routes>{" "}
     </div>
   </main>

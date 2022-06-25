@@ -40,17 +40,17 @@ export default function Dasboard() {
               <img src={arrowRightIcon} className="mb-2" />
             </Col>
             <Col>
-              <h5>Vehicle {vehicle}</h5>
+              <h5>Vehicle {vehicle || 1}</h5>
             </Col>
           </Row>
           <br />
           <Row>
-            <VehicleStatus vehicle={Number(vehicle)} />
+            <VehicleStatus vehicle={Number(vehicle || 1)} />
             <VehicleStatistics />
           </Row>
           <br />
           <Row>
-            <RecentTrips vehicle={Number(vehicle)} />
+            <RecentTrips vehicle={Number(vehicle || 1)} />
           </Row>
         </Container>
       </CardBody>
